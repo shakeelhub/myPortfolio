@@ -1,0 +1,72 @@
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 900px) and (max-height: 900px) {
+    .nav-links{
+     position: absolute;
+     margin-left: -80px;
+    }
+   }
+   
+   .about-image {
+    /* Default margin for mobile phones and small tablets */
+    margin-top: 100px;
+  }
+ 
+ 
+  /* From Uiverse.io by andrew-demchenk0 */ 
+ .linkedin {
+    position: relative;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px #2867b2 solid;
+    overflow: hidden;
+    color: black;
+  }
+  
+  .text1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 22%;
+  }
+  
+  .text2 {
+    position: absolute;
+    top: 25%;
+    left: -50px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+  }
+  
+  .icon::before {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+    content: '';
+    width: 130px;
+    height: 33px;
+    border-radius: 30px;
+    background-color: #2867b2;
+  }
+  
+  .linkedin:hover .icon {
+    transform: translateX(96px);
+    transition: transform 0.5s;
+  }
+  
+  .linkedin:hover .text2 {
+    transform: translateX(80px);
+    transition: transform 0.6s;
+  }
+  
+  .linkedin:active {
+    transform: scale(1.03);
+  }
